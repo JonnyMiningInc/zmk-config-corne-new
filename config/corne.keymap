@@ -234,9 +234,9 @@
             // | GUI | CTRL | SHFT | LWR | SPC |   | ENT | RSE  | BKSP | ALT | ESC |
 
             bindings = <
-&kp ESCAPE  &kp Q           &kp W           &kp F               &mt HOME P        &mt END B    &kp J      &kp L              &kp U                &kp Y            &kp SEMICOLON    &kp BACKSPACE
-&kp TAB     &mt LEFT_WIN A  &mt LEFT_ALT R  &mt LEFT_CONTROL S  &mt LEFT_SHIFT T  &kp G        &kp M      &mt RIGHT_SHIFT N  &mt RIGHT_CONTROL E  &mt RIGHT_ALT I  &mt RIGHT_WIN O  &kp ENTER
-&WriteLine  &kp Z           &kp X           &kp C               &kp D             &kp V        &kp K      &kp H              &kp COMMA            &kp DOT          &kp QUESTION     &kp EXCLAMATION
+&kp ESCAPE  &kp Q           &kp W           &kp E               &mt HOME R        &mt END T    &kp Z      &kp U              &kp I                &kp O            &kp P                &kp BACKSPACE
+&kp TAB     &mt LEFT_WIN A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &kp G        &kp H      &mt RIGHT_SHIFT J  &mt RIGHT_CONTROL K  &mt RIGHT_ALT L  &mt RIGHT_WIN MINUS  &kp ENTER
+&WriteLine  &kp Y           &kp X           &kp C               &kp V             &kp B        &kp N      &kp M              &kp COMMA            &kp DOT          &kp QUESTION         &kp EXCLAMATION
                                             &to 3               &to 1             &kp SPACE    &kp SPACE  &to 2              &to 0
             >;
         };
