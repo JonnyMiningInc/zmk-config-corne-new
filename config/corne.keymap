@@ -70,40 +70,12 @@
                 <&kp LCTRL>;
         };
 
-        euro: euro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp RIGHT_ALT>,
-                <&macro_tap>,
-                <&kp E>,
-                <&macro_release>,
-                <&kp RIGHT_ALT>;
-
-            label = "EURO";
-        };
-
-        degree_sign: degree_sign {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LEFT_SHIFT>,
-                <&macro_tap>,
-                <&kp CARET>,
-                <&macro_release>,
-                <&kp LEFT_SHIFT>;
-
-            label = "DEGREE_SIGN";
-        };
-
         WriteLine: WriteLine {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
                 <&macro_tap>,
-                <&kp LS(C) &kp O &kp N &kp S &kp O &kp L &kp E &kp PERIOD &kp LS(W) &kp R &kp I &kp T &kp E &kp LS(L) &kp I &kp N &kp E &kp LEFT_PARENTHESIS &kp DOUBLE_QUOTES &kp DOUBLE_QUOTES &kp RIGHT_PARENTHESIS &kp SEMICOLON &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW>;
+                <&kp LS(C) &kp O &kp N &kp S &kp O &kp L &kp E &kp PERIOD &kp LS(W) &kp R &kp I &kp T &kp E &kp LS(L) &kp I &kp N &kp E &kp LS(N8) &kp LS(N2) &kp LS(N2) &kp LS(N9) &kp LS(COMMA) &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW>;
 
             label = "WRITELINE";
         };
@@ -234,10 +206,10 @@
             // | GUI | CTRL | SHFT | LWR | SPC |   | ENT | RSE  | BKSP | ALT | ESC |
 
             bindings = <
-&kp ESCAPE  &kp Q           &kp W           &kp E               &mt HOME R        &mt END T    &kp Z      &kp U              &kp I                &kp O            &kp P                &kp BACKSPACE
-&kp TAB     &mt LEFT_WIN A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &kp G        &kp H      &mt RIGHT_SHIFT J  &mt RIGHT_CONTROL K  &mt RIGHT_ALT L  &mt RIGHT_WIN MINUS  &kp ENTER
-&WriteLine  &kp Y           &kp X           &kp C               &kp V             &kp B        &kp N      &kp M              &kp COMMA            &kp DOT          &kp LS(MINUS)        &kp LS(N1)
-                                            &to 3               &to 1             &kp SPACE    &kp SPACE  &to 2              &to 0
+&kp ESCAPE  &kp Q           &kp W           &kp E               &mt HOME R        &mt END T    &kp Y      &kp U              &kp I                &kp O            &kp P                &kp BACKSPACE
+&kp TAB     &mt LEFT_WIN A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &kp G        &kp H      &mt RIGHT_SHIFT J  &mt RIGHT_CONTROL K  &mt RIGHT_ALT L  &mt RIGHT_WIN SLASH  &kp ENTER
+&WriteLine  &kp Z           &kp X           &kp C               &kp V             &kp B        &kp N      &kp M              &kp COMMA            &kp DOT          &kp LS(MINUS)        &kp LS(N1)
+                                            &mo 3               &to 1             &kp SPACE    &kp SPACE  &mo 2              &to 0
             >;
         };
 
@@ -254,7 +226,7 @@
 &kp ESCAPE  &kp N1  &kp N2    &kp N3        &kp N4           &kp N5           &kp N6     &kp N7  &kp N8  &kp N9  &kp N0  &kp BACKSPACE
 &kp TAB     &none   &none     &kp UP_ARROW  &browsertab      &kp PAGE_UP      &kp N0     &kp N4  &kp N5  &kp N6  &none   &kp ENTER
 &WriteLine  &none   &kp LEFT  &kp DOWN      &kp RIGHT_ARROW  &kp PAGE_DOWN    &none      &kp N1  &kp N2  &kp N3  &none   &to 4
-                              &to 3         &to 1            &kp SPACE        &kp SPACE  &to 2   &to 0
+                              &mo 3         &to 1            &kp SPACE        &kp SPACE  &mo 2   &to 0
             >;
         };
 
@@ -271,7 +243,7 @@
 &kp ESCAPE  &kp EXCL    &kp QUESTION         &kp COMMA   &kp DOT          &kp LS(N6)               &kp RIGHT_BRACKET         &kp MINUS      &kp LS(N8)  &kp LS(N9)  &kp UNDERSCORE        &kp BACKSPACE
 &kp TAB     &kp LS(N2)  &kp LS(NON_US_HASH)  &kp LS(N5)  &kp LS(N0)       &kp RA(RIGHT_BRACKET)    &kp LS(RIGHT_BRACKET)     &kp LS(N7)     &kp RA(N7)  &kp RA(N0)  &kp MINUS             &kp ENTER
 &to 0       &kp RA(E)   &kp LS(N4)           &kp RA(Q)   &kp NON_US_HASH  &kp LS(GRAVE)            &kp RA(NON_US_BACKSLASH)  &kp RA(MINUS)  &kp RA(N8)  &kp RA(N9)  &kp NON_US_BACKSLASH  &kp LS(NON_US_BACKSLASH)
-                                             &to 3       &to 1            &kp SPACE                &kp SPACE                 &to 2          &to 0
+                                             &mo 3       &to 1            &kp SPACE                &kp SPACE                 &trans         &to 0
             >;
         };
 
@@ -281,7 +253,7 @@
 &kp F1      &kp F2        &kp F3        &kp F4        &kp F5      &kp F6            &kp F7  &kp F8  &kp F9  &kp F10  &kp F11      &kp F12
 &none       &none         &none         &none         &none       &studio_unlock    &none   &none   &none   &none    &none        &none
 &bt BT_NXT  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR  &bt BT_CLR_ALL    &none   &none   &none   &none    &bootloader  &to 4
-                                        &to 3         &to 1       &none             &none   &to 2   &to 0
+                                        &trans        &to 1       &none             &none   &mo 2   &to 0
             >;
         };
 
@@ -290,7 +262,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans            &trans            &trans     &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp SEMI  &kp SINGLE_QUOTE  &kp LEFT_BRACKET  &kp MINUS  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans            &trans            &trans     &trans
-                        &to 3   &to 1   &trans    &none   &to 2     &to 0
+                        &mo 3   &to 1   &trans    &none   &mo 2     &to 0
             >;
         };
     };
