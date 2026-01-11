@@ -150,7 +150,7 @@
             bindings = <
 &kp ESCAPE  &kp LS(N1)  &kp LS(MINUS)        &kp COMMA     &kp DOT          &kp LS(N6)               &kp RIGHT_BRACKET         &kp SLASH        &kp LS(N8)  &kp LS(N9)  &kp LS(GRAVE)  &kp BACKSPACE
 &kp TAB     &kp LS(N2)  &kp LS(NON_US_HASH)  &kp LS(N5)    &kp LS(N0)       &kp RA(RIGHT_BRACKET)    &kp LS(RIGHT_BRACKET)     &kp LS(N7)       &kp RA(N7)  &kp RA(N0)  &kp GRAVE      &kp ENTER
-&WriteLine  &kp RA(E)   &kp LS(N4)           &kp RA(Q)     &kp NON_US_HASH  &kp RA(PLUS)             &kp RA(NON_US_BACKSLASH)  &kp RA(MINUS)    &kp RA(N8)  &kp RA(N9)  &none          &to 0
+&WriteLine  &kp RA(E)   &kp LS(N4)           &kp RA(Q)     &kp NON_US_HASH  &none                    &kp RA(NON_US_BACKSLASH)  &kp RA(MINUS)    &kp RA(N8)  &kp RA(N9)  &none          &to 0
                                              &lt 3 ESCAPE  &lt 1 ENTER      &kp SPACE                &kp SPACE                 &lt 2 BACKSPACE  &lt 4 TAB
             >;
         };
