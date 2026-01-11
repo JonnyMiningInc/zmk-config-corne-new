@@ -114,9 +114,9 @@
             // | GUI | CTRL | SHFT | LWR | SPC |   | ENT | RSE  | BKSP | ALT | ESC |
 
             bindings = <
-&kp ESCAPE  &kp Q           &kp W           &kp E               &mt HOME R        &mt END T    &kp Y      &kp U              &kp I                &kp O            &kp P                 &kp BACKSPACE
-&kp TAB     &mt LEFT_WIN A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &kp G        &kp H      &mt RIGHT_SHIFT J  &mt RIGHT_CONTROL K  &mt RIGHT_ALT L  &mt RIGHT_WIN SLASH   &kp ENTER
-&WriteLine  &kp Z           &kp X           &kp C               &kp V             &kp B        &kp N      &kp M              &kp COMMA            &kp DOT          &mt LS(MINUS) LS(N1)  &to 0
+&kp ESCAPE  &kp Q           &kp W           &kp F               &mt HOME P        &mt END B    &kp J      &kp L              &kp U                &kp Z            &kp SLASH             &kp BACKSPACE
+&kp TAB     &mt LEFT_WIN A  &mt LEFT_ALT R  &mt LEFT_CONTROL S  &mt LEFT_SHIFT T  &kp G        &kp M      &mt RIGHT_SHIFT N  &mt RIGHT_CONTROL E  &mt RIGHT_ALT I  &mt RIGHT_WIN O       &kp ENTER
+&WriteLine  &kp Y           &kp X           &kp C               &kp D             &kp V        &kp K      &kp H              &kp COMMA            &kp DOT          &mt LS(MINUS) LS(N1)  &to 0
                                             &lt 3 ESCAPE        &lt 1 ENTER       &kp SPACE    &kp SPACE  &lt 2 BACKSPACE    &lt 4 TAB
             >;
         };
@@ -148,9 +148,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESCAPE  &kp LS(N1)  &kp LS(MINUS)        &kp COMMA     &kp DOT          &kp LS(N6)               &kp RIGHT_BRACKET         &kp SLASH        &kp LS(N8)  &kp LS(N9)  &kp LS(SLASH)  &kp BACKSPACE
-&kp TAB     &kp LS(N2)  &kp LS(NON_US_HASH)  &kp LS(N5)    &kp LS(N0)       &kp RA(RIGHT_BRACKET)    &kp LS(RIGHT_BRACKET)     &kp LS(N7)       &kp RA(N7)  &kp RA(N0)  &kp SLASH      &kp ENTER
-&WriteLine  &kp RA(E)   &kp LS(N4)           &kp RA(Q)     &kp NON_US_HASH  &kp LS(GRAVE)            &kp RA(NON_US_BACKSLASH)  &kp RA(MINUS)    &kp RA(N8)  &kp RA(N9)  &none          &to 0
+&kp ESCAPE  &kp LS(N1)  &kp LS(MINUS)        &kp COMMA     &kp DOT          &kp LS(N6)               &kp RIGHT_BRACKET         &kp SLASH        &kp LS(N8)  &kp LS(N9)  &kp LS(GRAVE)  &kp BACKSPACE
+&kp TAB     &kp LS(N2)  &kp LS(NON_US_HASH)  &kp LS(N5)    &kp LS(N0)       &kp RA(RIGHT_BRACKET)    &kp LS(RIGHT_BRACKET)     &kp LS(N7)       &kp RA(N7)  &kp RA(N0)  &kp GRAVE      &kp ENTER
+&WriteLine  &kp RA(E)   &kp LS(N4)           &kp RA(Q)     &kp NON_US_HASH  &kp RA(PLUS)             &kp RA(NON_US_BACKSLASH)  &kp RA(MINUS)    &kp RA(N8)  &kp RA(N9)  &none          &to 0
                                              &lt 3 ESCAPE  &lt 1 ENTER      &kp SPACE                &kp SPACE                 &lt 2 BACKSPACE  &lt 4 TAB
             >;
         };
